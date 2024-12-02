@@ -18,24 +18,47 @@
     </div>
     <div class="intro">
     <h3>what is frontend mentor? how will it help me?</h3>
-    <img src="Images/icon-minus.svg" alt="">
+    <button onclick="myFunction()">
+    <img id="toggleIcon" src="Images/icon-minus.svg" alt="minus sign ">
+</button>
 </div>
+  <div id="myText">
      <p >Frontend Mentor offers realistic coding challenges to help developers improve their fronted coding skills with projects in HTML, CSS, and 
         Javascript. It's suitable for all levels and ideal  for portfolio building.</p>
+    </div>
         <div class="list">
           <hr>  
           <div class="addition"><h3>Is Frontend Mentor Free?</h3>
-            <img src="Images/icon-plus.svg" alt=""></div>
-          
+            <button onclick="myFunction()">
+            <img id="toggleIcon" src="Images/icon-plus.svg" alt=""></div>
+        </button>
          <hr>
          <div class="addition"> <h3>Can I use Frontend Mentor Projects in my portfolio?</h3>
-            <img src="Images/icon-plus.svg" alt="">
+            <button onclick="myFunction()">
+            <img  id="toggleIcon" src="Images/icon-plus.svg" alt="">
+        </button>
         </div>
          <hr>
          <div class="addition"> <h3>How can I get help if I'm stuck on a challenge?</h3>
-            <img src="Images/icon-plus.svg" alt="">
+            <button onclick="myFunction()">
+            <img id="toggleIcon" src="Images/icon-plus.svg" alt="">
+        </button>
         </div>
         </div>
     </div>
+    <script>
+      function myFunction(){
+        var x = document.getElementById("myText");
+        var icon = document.getElementById("toggleIcon");
+        if(x.style.display==="none" || x.style.display === ""){
+            x.style.display="block";
+            icon.src = "Images/icon-minus.svg";
+        } else{
+            x.style.display="none";
+            icon.src = "Images/icon-plus.svg";
+        }
+      }
+
+    </script>
 </body>
 </html>

@@ -47,10 +47,14 @@ p{
     margin-right: 20px;
 }
 hr {
-border: none; /* Removes the default border */
-height: 0.5px; /* Sets the thickness of the line */
-background-color: #c1b9b9; /* Sets the color of the line */
-margin: 10px 0; /* Adds vertical spacing */
-
-margin-right: 20px;
+ border: none; 
+ height: 0.3px; 
+ background-color: #c1b9b9; 
+ margin: 10px 0; 
+ margin-right: 20px;
+}
+button{
+    background: none;
+    border:none;
+    padding:0;
 }
